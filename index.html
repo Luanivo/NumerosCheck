@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt">
 <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Par ou Ímpar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>NoteOne</title>
 </head>
-
 <body>
+    <h1>Lista de Tarefas</h1>
+    
     <header>
-        <h1>Verificador de Números</h1>
-        <nav>
-        <a href="../Projeto_Tarefas/index.html" class="noteone-link">NoteOne</a>
-
-        </nav>
+        <input id="inputTarefa" type="text" placeholder="Digite Sua Tarefa">
+        <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>
     </header>
-
-    <main>
-        <div class="container">
-            <h2>Verifique se o número é Par ou Ímpar</h2>
-
-            <div class="input-group">
-                <input type="number" id="numero" placeholder="Digite um número">
-                <button onclick="verificarParOuImpar()"><i class="fas fa-check"></i> Verificar</button>
-            </div>
-
-            <p id="resultado"></p>
-        </div>
+    <main id="areaLista">
     </main>
+<footer>
+    <a href="../Impar/index.html" class="noteone-link">Testador de Números</a>
+    <p>Desenvolvido com HTML, CSS e JavaScript</p>
+</footer>
 
-    <footer>
-        <p>Verificador de Números</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
